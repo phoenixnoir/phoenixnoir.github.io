@@ -192,26 +192,33 @@ ul li {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(180deg, #0BD49E 0%, #067457 100%);
+  background: #9ADBC8;
 }
 
-button {
+.button {
   display: flex;
   justify-content: center;
   width: -moz-fit-content;
   width: fit-content;
   padding: 1rem 1.4rem;
-  background: #00E5EA;
+  background: #005A5B;
   border-radius: 14px;
   font-family: "Unbounded", sans-serif;
   font-weight: 500;
   font-size: 1.25rem;
   border: none;
+  text-decoration: none;
+  color: #f8f8f8;
 }
 
-button:hover {
-  background: #00ccd1;
+.button:hover {
+  background: #004142;
   cursor: pointer;
+}
+
+.button:visited {
+  text-decoration: none;
+  color: #f8f8f8;
 }
 
 img {
@@ -235,10 +242,17 @@ footer a {
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .grid {
     gap: 1rem;
+  }
+  #first {
+    padding: 2rem 0;
+    height: 100vh;
+  }
+  #profile-pic {
+    width: 60%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -248,7 +262,7 @@ footer a {
   #hamburger-icon {
     display: block;
   }
-  button {
+  .button {
     width: 100%;
   }
 }/*# sourceMappingURL=stylesheet.css.map */
