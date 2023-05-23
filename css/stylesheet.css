@@ -62,13 +62,17 @@ h5 {
   font-weight: 300;
 }
 
-small, .text_small {
+small, .text-small {
   font-size: 0.8rem;
   font-weight: 300;
 }
 
 p {
   font-weight: 200;
+}
+
+.white-text {
+  color: #f8f8f8;
 }
 
 header a {
@@ -184,14 +188,53 @@ ul li {
   flex-wrap: wrap;
 }
 
+#first {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #9ADBC8;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 1.4rem;
+  background: #005A5B;
+  border-radius: 14px;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  border: none;
+  text-decoration: none;
+  color: #f8f8f8;
+}
+
+.button:hover {
+  background: #004142;
+  cursor: pointer;
+}
+
+.button:visited {
+  text-decoration: none;
+  color: #f8f8f8;
+}
+
 img {
   width: 100%;
   height: auto;
-  border-radius: 1rem;
 }
 
-section {
-  margin-bottom: 10rem;
+footer {
+  height: 4rem;
+  background: #044433;
+  display: flex;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 900px) {
@@ -199,13 +242,17 @@ section {
     width: 100%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .grid {
     gap: 1rem;
   }
-  section {
-    margin-bottom: 1.6rem;
+  #first {
+    padding: 2rem 0;
+    height: 100vh;
+  }
+  #profile-pic {
+    width: 60%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -214,5 +261,8 @@ section {
   }
   #hamburger-icon {
     display: block;
+  }
+  .button {
+    width: 100%;
   }
 }/*# sourceMappingURL=stylesheet.css.map */

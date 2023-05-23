@@ -3,7 +3,9 @@
 $font: 'Unbounded', sans-serif
 $white: #f8f8f8
 $black: #222
-
+$aqua: #9ADBC8
+$forestgreen: #044433
+$deep-sea-green: #005A5B
 *
   padding: 0
   margin: 0
@@ -61,12 +63,15 @@ h5
   font-size: 1.25rem
   font-weight: 300
 
-small, .text_small
+small, .text-small
   font-size: 0.8rem
   font-weight: 300
 
 p
   font-weight: 200
+
+.white-text
+  color: $white
 
 header a
   text-decoration: none
@@ -164,25 +169,63 @@ ul li
   justify-content: center
   flex-wrap: wrap
 
+#first
+  height: 100vh
+  display: flex
+  align-items: center
+  background: $aqua
+
+.button
+  display: flex
+  justify-content: center
+  width: fit-content
+  padding: 1rem 1.4rem
+  background: $deep-sea-green
+  border-radius: 14px
+  font-family: $font
+  font-weight: 500
+  font-size: 1.25rem
+  border: none
+  text-decoration: none
+  color: $white
+
+.button:hover
+  background: darken($deep-sea-green, 5%)
+  cursor: pointer
+
+.button:visited
+  text-decoration: none
+  color: $white
+
 img
   width: 100%
   height: auto
-  border-radius: 1rem
 
-section
-  margin-bottom: 10rem
+footer
+  height: 4rem
+  background: $forestgreen
+  display: flex
+  align-items: center
+
+footer a
+  text-decoration: none
+
 
 @media only screen and (max-width: 900px) ///tablet
   .wrapper
     width: 100%
     display: flex
     flex-direction: column
-    flex-wrap: wrap
+    flex-wrap: nowrap
   .grid
     gap: 1rem
 
-  section
-    margin-bottom: 1.6rem
+  #first
+    padding: 2rem 0
+    height: 100vh
+  
+  #profile-pic
+    width: 60%
 
 @media only screen and (max-width: 600px) ///mobile
   header nav
@@ -190,3 +233,8 @@ section
 
   #hamburger-icon
     display: block
+
+  .button
+    width: 100%
+
+  
