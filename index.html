@@ -10,51 +10,27 @@
   </head>
 
   <body>
-    <header>
-      <div id="brand">
-        <a href="/"> <img src="./img/logo.svg" /></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="/home">Home</a></li>
-          <li><a href="/products">Products</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
-      </nav>
-      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <ul class="mobile-menu">
-          <li><a href="/home">Home</a></li>
-          <li><a href="/products">Products</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
-      </div>
-    </header>
-
-    <section id="top">
+    <section id="first">
       <div class="wrapper grid">
         <div class="grid--2cols">
-          <img src="http://placekitten.com/800/600">
+          <img id="profile-pic" src="./img/profile-picture.png">
         </div>
-        <div class="grid--2cols v-middle">
+        <div class="grid--2cols v-middle white-text">
           <h1>Hello, I'm Caroline!</h1>
           <h2>I'm a designer from Berlin</h2>
+          <button href="#">View my portfolio</button>
         </div>
       </div>
+    </div>
     </section>
-    <section id="ux">
-      <div class="wrapper grid">
-        <div class="grid--2cols">
-          <img src="http://placekitten.com/800/600">
-        </div>
-        <div class="grid--2cols v-middle">
-          <h3>Web design/UX</h3>
-          <p>Creating interactive elements to boost sales and improve experiences across thousands of web pages</p>
-        </div>
-      </div>
-    </section>
+
+    <footer>
+      <div class="wrapper">
+        <div class="text-small">
+      <a href="#" class="white-text">Impressum</a>
+    </div>
+    </div>
+    </footer>
 
     <script src="./js/index.js"></script>
   </body>

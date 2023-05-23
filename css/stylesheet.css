@@ -62,13 +62,17 @@ h5 {
   font-weight: 300;
 }
 
-small, .text_small {
+small, .text-small {
   font-size: 0.8rem;
   font-weight: 300;
 }
 
 p {
   font-weight: 200;
+}
+
+.white-text {
+  color: #f8f8f8;
 }
 
 header a {
@@ -184,14 +188,46 @@ ul li {
   flex-wrap: wrap;
 }
 
+#first {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #0BD49E 0%, #067457 100%);
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 1.4rem;
+  background: #00E5EA;
+  border-radius: 14px;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  border: none;
+}
+
+button:hover {
+  background: #00ccd1;
+  cursor: pointer;
+}
+
 img {
   width: 100%;
   height: auto;
-  border-radius: 1rem;
 }
 
-section {
-  margin-bottom: 10rem;
+footer {
+  height: 4rem;
+  background: #044433;
+  display: flex;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 900px) {
@@ -204,9 +240,6 @@ section {
   .grid {
     gap: 1rem;
   }
-  section {
-    margin-bottom: 1.6rem;
-  }
 }
 @media only screen and (max-width: 600px) {
   header nav {
@@ -214,5 +247,8 @@ section {
   }
   #hamburger-icon {
     display: block;
+  }
+  button {
+    width: 100%;
   }
 }/*# sourceMappingURL=stylesheet.css.map */
