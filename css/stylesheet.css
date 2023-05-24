@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Unbounded";
-  src: url("/font/Unbounded-VariableFont_wght.ttf.ttf") format("truetype");
+  src: url("/font/Unbounded-VariableFont_wght.ttf") format("truetype");
 }
 * {
   padding: 0;
@@ -102,7 +102,7 @@ header {
 }
 
 #brand img {
-  height: 50px;
+  height: 2.2rem;
   width: auto;
   display: block;
 }
@@ -165,11 +165,11 @@ ul li {
   height: calc(100vh - 6rem);
   width: 100%;
   background: #f8f8f8;
-  padding-top: 1.4rem;
+  padding-top: 0.4rem;
 }
 
 .mobile-menu li {
-  margin-bottom: 10px;
+  margin-bottom: 1.4rem;
 }
 
 .wrapper {
@@ -188,7 +188,7 @@ ul li {
 }
 
 #first {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   background: #9ADBC8;
@@ -264,7 +264,7 @@ footer a {
   }
   #first {
     padding: 2rem 0;
-    height: 100vh;
+    min-height: 100vh;
   }
   #profile-pic {
     width: 60%;
@@ -279,5 +279,8 @@ footer a {
   }
   .button {
     width: 100%;
+  }
+  #portfolio-overview {
+    padding: 1rem 0 2rem 0;
   }
 }/*# sourceMappingURL=stylesheet.css.map */
