@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="./img/logo.svg" />
+    <link rel="icon" href="../img/logo.svg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/stylesheet.css" />
@@ -10,21 +10,62 @@
   </head>
 
   <body>
-    <section id="first">
-      <div class="wrapper grid">
-        
+    <header>
+      <div id="brand">
+        <a href="/"> <img src="/img/logo.svg" /></a>
       </div>
-    </div>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/portfolio/portfolio.html">Portfolio</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/portfolio/portfolio.html">Portfolio</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
+    </header>
+    <section id="portfolio-overview">
+      <div class="wrapper grid">
+          <h3>Portfolio</h3>
+        </div>
+      </div>
+      <div class="wrapper grid">
+        <div class="grid--3cols">
+          <a href="#">
+          <img src="/img/web-design.png"></a>
+          <h4>Web design</h4>
+        </div>
+        <div class="grid--3cols">
+          <a href="#">
+          <img src="/img/vegas-brand-redesign.png"></a>
+          <h4>VEGAS brand redesign</h4>
+        </div>
+        <div class="grid--3cols">
+          <a href="#">
+          <img src="/img/service-centre.png"></a>
+          <h4>Service Center</h4>
+        </div>
+      </div>
+      
     </section>
+
 
     <footer>
       <div class="wrapper">
         <div class="text-small">
-      <a href="#" class="white-text">Impressum</a>
+      <a href="/impressum.html">Impressum</a>
     </div>
     </div>
     </footer>
 
-    <script src="./js/index.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
