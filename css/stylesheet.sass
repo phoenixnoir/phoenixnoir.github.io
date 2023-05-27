@@ -37,8 +37,12 @@ body
   &--3cols
     grid-template-columns: repeat(3, 1fr)
 
-  &--4cols
+  &--4cols   
     grid-template-columns: repeat(4, 1fr)
+
+.fifty
+  width: 50%
+
 
 h1, h2, h3, h4, h5
   margin: 1rem 0 1.38rem
@@ -202,7 +206,7 @@ ul li
   color: $white
 
 img
-  width: 100%
+  max-inline-size: 100%
   height: auto
 
 #portfolio-overview
@@ -211,6 +215,9 @@ img
 
 #portfolio-overview img
   border-radius: 14px
+
+.project-overview
+  padding: 2rem 0
 
 footer
   height: 4rem
@@ -231,6 +238,9 @@ footer a
     flex-wrap: nowrap
   .grid
     gap: 1rem
+
+  .fifty
+    width: 100%
 
   #first
     padding: 2rem 0
