@@ -5,29 +5,36 @@
     <link rel="icon" href="./img/logo.svg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/stylesheet.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css" />
     <title>Caroline Lange</title>
   </head>
 
   <body>
     <section id="first">
-      <div class="wrapper grid">
-        <div class="grid--2cols">
-          <img id="profile-pic" src="./img/profile-picture.png">
-        </div>
-        <div class="grid--2cols v-middle">
-          <h1>Hello, I'm Caroline</h1>
+      <div class="container-fluid">
+        <div class="row middle-lg">
+          <div class="col-lg-5 col-xs-10">
+            <img id="profile-pic" src="./img/profile-picture.png">
+          </div>
+          <div class="col-lg-7 col-xs-12">
+            <h1>Hello, I'm Caroline</h1>
           <h2>I'm a designer from Berlin</h2>
           <a href="/portfolio/portfolio.html" class="button">View my portfolio</a>
+          </div>
         </div>
       </div>
     </section>
 
     <footer>
-      <div class="wrapper">
-        <div class="text-small">
-      <a href="/impressum.html">Impressum</a>
-    </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+          <div class="text-small">
+            <a href="/impressum.html">Impressum</a>
+          </div>
+        </div>
+      </div>
     </div>
     </footer>
 

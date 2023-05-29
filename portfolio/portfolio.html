@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/stylesheet.css" />
+    <link rel="stylesheet" href="/css/flexboxgrid.min.css" type="text/css" />
     <title>Caroline Lange - Portfolio</title>
   </head>
 
@@ -33,28 +34,29 @@
       </div>
     </header>
     <section id="portfolio-overview">
-      <div class="wrapper grid">
-          <h3>Portfolio</h3>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg">
+          <h3>Portfolio</h3></div>
         </div>
-      </div>
-      <div class="wrapper grid">
-        <div class="grid--3cols">
-          <a href="/portfolio/web-design.html">
-          <img src="/img/web-design.png"></a>
-          <h4>Web design</h4>
-        </div>
-        <div class="grid--3cols">
-          <a href="#">
-          <img src="/img/vegas-brand-redesign.png"></a>
+        <div class="row">
+          <div class="col-lg-4 col-xs-12">
+            <a href="/portfolio/web-design.html">
+              <img src="/img/web-design.png"></a>
+              <h4>Web design</h4>
+          </div>
+          <div class="col-lg-4 col-xs-12">
+            <a href="/portfolio/web-design.html">
+              <img src="/img/vegas-brand-redesign.png"></a>
           <h4>VEGAS brand redesign</h4>
-        </div>
-        <div class="grid--3cols">
-          <a href="#">
-          <img src="/img/service-centre.png"></a>
+          </div>
+          <div class="col-lg-4 col-xs-12">
+            <a href="/portfolio/web-design.html">
+              <img src="/img/service-centre.png"></a>
           <h4>Service Center</h4>
+          </div>
         </div>
-      </div>
-      
+      </div>     
     </section>
 
 
