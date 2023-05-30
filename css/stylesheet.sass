@@ -22,10 +22,15 @@ html
   font-size: 112.5% ///18px
 
 body
-  background-color: $white
   color: $black
   font-family: $font-family, sans-serif
   line-height: 1.75
+
+.wrap
+  max-width: 1400px
+
+.row
+  padding-bottom: 1rem
 
 h1, h2, h3, h4, h5
   margin: 1rem 0 1.38rem
@@ -167,6 +172,7 @@ ul li
   justify-content: center
   width: fit-content
   padding: 1rem 1.4rem
+  margin-bottom: 1rem
   background: $deep-sea-green
   border-radius: 14px
   font-family: $font-family
@@ -212,9 +218,6 @@ footer a
   color: $black
 
 @media only screen and (max-width: 900px) ///tablet
-  .grid
-    gap: 1rem
-
   #first
     padding: 2rem 0
     min-height: 100vh
@@ -223,6 +226,9 @@ footer a
     width: 60%
 
 @media only screen and (max-width: 600px) ///mobile
+  .row
+    padding-bottom: 1rem
+
   header nav
     display: none
 
