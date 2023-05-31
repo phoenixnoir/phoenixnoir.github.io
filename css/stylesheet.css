@@ -189,7 +189,7 @@ ul li {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(0deg, #f8f8f8 0%, #9ADBC8 100%);
+  background: linear-gradient(0deg, #fff 0%, #9ADBC8 100%);
 }
 
 .button {
@@ -224,6 +224,10 @@ img {
   height: auto;
 }
 
+.shadow {
+  box-shadow: 0px 2px 4px rgba(34, 34, 34, 0.25);
+}
+
 #portfolio-overview {
   min-height: 100vh;
   margin: 4rem 0 0 0;
@@ -240,7 +244,6 @@ img {
 
 footer {
   height: 4rem;
-  background: #f8f8f8;
   display: flex;
   align-items: center;
   border-top: 1px solid #9ADBC8;
