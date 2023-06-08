@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/stylesheet.css" />
     <link rel="stylesheet" href="/css/flexboxgrid.min.css" type="text/css" />
+    <link rel="stylesheet" href="/css/aos.css" />
     <title>Caroline Lange - Portfolio</title>
   </head>
 
@@ -38,7 +39,7 @@
             <h3>Web design</h3>
           </div>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="600">
           <div class="col-lg-8 col-md-12">
             <img class="shadow" src="/img/main-nav-small.png" />
           </div>
@@ -55,12 +56,12 @@
             <p>Improve usability and user flow</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="600">
           <div class="col-lg">
             <img class="shadow" src="/img/main-nav-large.png" />
           </div>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="600">
           <div class="col-lg-4 col-md-12">
             <a id="orderboxes"> <h4>Order boxes</h4></a>
             <h5>Task</h5>
@@ -86,5 +87,9 @@
     </footer>
 
     <script src="/js/index.js"></script>
+    <script src="/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
