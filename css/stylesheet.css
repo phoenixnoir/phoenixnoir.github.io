@@ -60,15 +60,21 @@ h4 {
 h5 {
   font-size: 1.25rem;
   font-weight: 320;
+  margin-bottom: 0.4rem;
 }
 
-small, .text-small {
+small {
   font-size: 0.8rem;
   font-weight: 300;
 }
 
 p {
   font-weight: 300;
+}
+
+ul {
+  font-weight: 300;
+  padding-left: 1.2rem;
 }
 
 .white-text {
@@ -105,19 +111,20 @@ header {
   display: block;
 }
 
-ul {
+header ul {
   list-style: none;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-weight: 420;
 }
 
-ul a {
+header ul a {
   color: #222;
 }
 
-ul li {
+header ul li {
   padding: 5px;
   margin-left: 10px;
 }
@@ -168,21 +175,6 @@ ul li {
 
 .mobile-menu li {
   margin-bottom: 1.4rem;
-}
-
-.wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 1.4rem;
-  display: flex;
-  flex-direction: row;
-}
-
-.v-middle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .button {

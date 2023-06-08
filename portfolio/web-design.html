@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="../img/logo.svg" />
+    <link rel="icon" href="/img/logo.svg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/stylesheet.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
     <link rel="stylesheet" href="/css/flexboxgrid.min.css" type="text/css" />
     <title>Caroline Lange - Portfolio</title>
   </head>
@@ -19,7 +19,6 @@
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/portfolio/portfolio.html">Portfolio</a></li>
-
         </ul>
       </nav>
       <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
@@ -29,7 +28,6 @@
         <ul class="mobile-menu">
           <li><a href="/index.html">Home</a></li>
           <li><a href="/portfolio/portfolio.html">Portfolio</a></li>
-
         </ul>
       </div>
     </header>
@@ -38,13 +36,6 @@
         <div class="row">
           <div class="col-lg-8 col-md-12">
             <h3>Web design</h3>
-            <p>
-              I led the design for Magix and VEGAS brands' official websites,
-              developing concepts and designs to enhance usability and
-              conversion rates. As a member of the web development team, I
-              implemented these improvements for customer and stakeholder
-              satisfaction.
-            </p>
           </div>
         </div>
         <div class="row">
@@ -53,12 +44,15 @@
           </div>
           <div class="col-lg-4 col-md-12">
             <h4>Main navigation for magix.com</h4>
-            <p>
-              Magix is a software company providing diverse audio, video, and
-              photo editing products. A user-friendly navigation system was
-              crucial in offering a clear overview and facilitating a quick
-              product search.
-            </p>
+            <h5>Task</h5>
+            <p>Create a navigation that:</p>
+            <ul>
+              <li>is easily comprehensible</li>
+              <li>is quickly scannable</li>
+              <li>contains the vast product selection</li>
+            </ul>
+            <h5>Goal</h5>
+            <p>Improve usability and user flow</p>
           </div>
         </div>
         <div class="row">
@@ -69,12 +63,10 @@
         <div class="row">
           <div class="col-lg-4 col-md-12">
             <a id="orderboxes"> <h4>Order boxes</h4></a>
-            <p>
-              VEGAS is a professional video editing software brand with its main
-              focus on the product "VEGAS Pro", available in three packages at varying price
-              points. I developed new order boxes to enable quick price comparisons
-              and improve user understanding of different payment plans.
-            </p>
+            <h5>Task</h5>
+            <p>Provide quick price comparisons between software packages</p>
+            <h5>Goal</h5>
+            <p>Improve usability and boost conversion rates</p>
           </div>
           <div class="col-lg-8 col-md-12">
             <img class="shadow" src="/img/vegas-orderboxes.png" />
@@ -84,9 +76,11 @@
     </section>
 
     <footer>
-      <div class="wrapper">
-        <div class="text-small">
-          <a href="/impressum.html">Impressum</a>
+      <div class="wrap container-fluid">
+        <div class="row-center-xs">
+          <div class="col small">
+            <a href="/imprint.html">Imprint</a>
+          </div>
         </div>
       </div>
     </footer>
