@@ -107,6 +107,9 @@ header {
   justify-content: space-between;
   margin-bottom: 1.6rem;
   border-bottom: 0.2rem solid #9ADBC8;
+  position: sticky;
+  top: 0;
+  z-index: 200;
 }
 
 #brand {
@@ -132,6 +135,7 @@ header ul {
   align-items: center;
   justify-content: space-around;
   font-weight: 420;
+  padding-left: 0;
 }
 
 header ul a {
