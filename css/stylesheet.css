@@ -231,6 +231,10 @@ img {
   box-shadow: 0px 2px 4px rgba(34, 34, 34, 0.25);
 }
 
+#main-nav {
+  cursor: pointer;
+}
+
 #first {
   min-height: 100vh;
   display: flex;

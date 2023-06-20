@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/stylesheet.css" />
     <link rel="stylesheet" href="/css/flexboxgrid.min.css" type="text/css" />
     <link rel="stylesheet" href="/css/aos.css" />
+    <script src="/js/lottie.js" type="text/javascript"></script>
     <title>Caroline Lange - Portfolio</title>
   </head>
 
@@ -45,15 +46,29 @@
           data-aos-duration="600"
           data-aos-offset="400"
         >
-          <div class="col-lg-8 col-md-12">
-            <img class="shadow" src="/img/main-nav-small.png" />
+          <div class="col-lg-8 col-md-12" id="animation-container">
+            <script>
+              var animation = bodymovin.loadAnimation({
+                container: document.getElementById("animation-container"),
+                path: "/animation/main-nav.json",
+                renderer: "svg",
+                loop: true,
+                autoplay: true,
+                progressiveLoad: true,
+              });
+            </script>
           </div>
           <div class="col-lg-4 col-md-12">
             <h4>Main navigation for magix.com</h4>
             <h5>Task</h5>
-            <p>Create a main navigation that improves usability and user flow</p>
+            <p>
+              Create a main navigation that improves usability and user flow
+            </p>
             <h5>Implementation</h5>
-            <p>My key goals in the concept and design of the navigation were that it:</p>
+            <p>
+              My key goals in the concept and design of the navigation were that
+              it:
+            </p>
             <ul>
               <li>is easily comprehensible</li>
               <li>is quickly scannable</li>
@@ -71,43 +86,40 @@
             <img class="shadow" src="/img/main-nav-large.png" />
           </div>
         </div>
-        <!-- PIXELATED. MUST FIX!
         <div
           class="row"
           data-aos="fade-up"
           data-aos-duration="600"
           data-aos-offset="400"
         >
-          <div class="col-lg">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-            <lottie-player
-              src="https://lottie.host/f35cada1-ab70-42af-9301-31a41d9c2be1/2fgugIxzMH.json"
-              background="transparent"
-              speed="1.5"
-              style="width: 100%; height: auto"
-              loop
-              autoplay
-            ></lottie-player>
+          <div class="col-lg-8 col-md-12">
+            <h4>Order boxes</h4>
+            <h5>Task</h5>
+            <p>
+              Improve usability and boost conversion rates of order boxes on
+              product pages
+            </p>
+            <h5>Implementation</h5>
+            <p>
+              Main focus on providing quick price comparisons between software
+              packages
+            </p>
           </div>
         </div>
-        -->
         <div
           class="row"
           data-aos="fade-up"
           data-aos-duration="600"
           data-aos-offset="400"
         >
-          <div class="col-lg-4 col-md-12">
-            <a id="orderboxes"> <h4>Order boxes</h4></a>
-            <h5>Task</h5>
-            <p>Improve usability and boost conversion rates of order boxes on product pages</p>
-            <h5>Implementation</h5>
-            <p>Main focus on providing quick price comparisons between software packages</p>
-          </div>
-          <div class="col-lg-8 col-md-12">
-            <img class="shadow" src="/img/vegas-orderboxes.png" />
-          </div>
+        <div class="col-lg-6 col-md-12">
+          <h5>Old</h5>
+          <img class="shadow" src="/img/vegas-ob-old.png" />
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <h5>New</h5>
+          <img class="shadow" src="/img/vegas-ob-new.png" />
+        </div>
         </div>
       </div>
     </section>
@@ -122,8 +134,8 @@
       </div>
     </footer>
 
-    <script src="/js/index.js"></script>
-    <script src="/js/aos.js"></script>
+    <script src="/js/index.js" type="text/javascript"></script>
+    <script src="/js/aos.js" type="text/javascript"></script>
     <script>
       AOS.init();
     </script>
