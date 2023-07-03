@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Unbounded";
   src: url("/font/Unbounded-VariableFont_wght.ttf") format("truetype");
-  font-display: swap;
+  font-display: fallback;
 }
 * {
   padding: 0;
