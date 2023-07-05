@@ -262,6 +262,12 @@ canvas {
   border-radius: 14px;
 }
 
+#service-centre {
+  background: linear-gradient(180deg, #d2efe7 95%, #fff 100%);
+  width: 100%;
+  padding: 3rem 0;
+}
+
 .card {
   border-radius: 14px;
   transition: box-shadow 0.3s ease-in-out;
