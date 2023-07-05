@@ -229,6 +229,7 @@ img {
 
 .shadow {
   box-shadow: 0px 2px 4px rgba(34, 34, 34, 0.25);
+  border-radius: 14px;
 }
 
 #main-nav {
@@ -236,7 +237,7 @@ img {
 }
 
 #first {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   background: linear-gradient(0deg, #fff 0%, #9ADBC8 100%);
