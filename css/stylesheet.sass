@@ -6,10 +6,12 @@
 
 @include font('Unbounded', '/font/Unbounded-VariableFont_wght')
 
-$font-family: 'Unbounded'
+$font-family: 'Unbounded', sans-serif
 $white: #f8f8f8
 $black: #222
 $aqua: #9ADBC8
+$magic-mint: #99FFC2
+$aquamarine: #95FFE0
 $forestgreen: #044433
 $deep-sea-green: #005A5B
 
@@ -190,6 +192,7 @@ header ul li
 .button:hover
   background: darken($deep-sea-green, 5%)
   cursor: pointer
+  color: $white
 
 .button:visited
   text-decoration: none
@@ -208,11 +211,11 @@ img
 
 #first
   min-height: 80vh
-  width: 100vw
   position: relative
   display: flex
   align-items: center
-  background: linear-gradient(180deg, rgba(109, 255, 168, 0.70) 0%, rgba(104, 255, 211, 0.70) 84.38%, rgba(255, 255, 255, 0.70) 100%)
+  overflow: hidden
+  background: linear-gradient(180deg, $magic-mint 0%, $aquamarine 85%, #FFF 100%)
 
 canvas
   width: 100%
@@ -234,10 +237,69 @@ canvas
 
 .card:hover
   box-shadow: 0 0 0 1px rgba(53,72,91,.07), 0 2px 2px rgba(0,0,0,.01), 0 4px 4px rgba(0,0,0,.02), 0 10px 8px rgba(0,0,0,.03), 0 15px 15px rgba(0,0,0,.03), 0 30px 30px rgba(0,0,0,.04), 0 70px 65px rgba(0,0,0,.05)
-  color: $deep-sea-green
 
 .card img
   margin-top: 1rem
+
+.tools
+  min-width: 8.75rem
+  padding: 0.2rem 1.25rem
+  border-radius: 1.875rem
+  background: $aquamarine
+  margin: 1rem 0.2rem
+
+.tools h5
+  padding-bottom: 0.4rem
+
+.tools:hover
+  box-shadow: 0 0 0 1px rgba(53,72,91,.07), 0 2px 2px rgba(0,0,0,.01), 0 4px 4px rgba(0,0,0,.02), 0 10px 8px rgba(0,0,0,.03), 0 15px 15px rgba(0,0,0,.03), 0 30px 30px rgba(0,0,0,.04), 0 70px 65px rgba(0,0,0,.05)
+
+#contact
+  background: linear-gradient(180deg, $aqua 85%, #FFF 100%)
+  width: 100%
+  padding: 4rem 0
+
+#linkedin a
+  display: flex
+  flex-direction: row
+  gap: 1rem
+  flex-wrap: nowrap
+  align-items: center
+
+form
+  width: 100%
+  background: $white
+  border-radius: 14px
+  padding: 1.2rem
+
+form ul
+  list-style: none
+  padding: 0
+  margin: 0
+
+form li
+  text-align: left
+
+form li + li
+  margin-top: 1rem
+
+label
+  display: inline-block
+
+input, textarea
+  width: 100%
+  min-height: 2.6rem
+  padding: 0.6rem
+  font-family: $font-family
+  font-weight: 400
+  font-size: 0.8rem
+
+textarea
+  height: 8rem
+
+form .button
+  width: 100%
+
 
 .project-overview
   margin: 2rem 0
